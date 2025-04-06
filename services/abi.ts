@@ -1,4 +1,4 @@
-const abi = [
+[
   {
     inputs: [],
     stateMutability: "nonpayable",
@@ -82,7 +82,7 @@ const abi = [
         type: "bool",
       },
     ],
-    stateMutability: "nonpayable",
+    stateMutability: "payable",
     type: "function",
   },
   {
@@ -197,13 +197,7 @@ const abi = [
     type: "event",
   },
   {
-    inputs: [
-      {
-        internalType: "string",
-        name: "_username",
-        type: "string",
-      },
-    ],
+    inputs: [],
     name: "registerUser",
     outputs: [],
     stateMutability: "nonpayable",
@@ -230,12 +224,6 @@ const abi = [
         internalType: "address",
         name: "user",
         type: "address",
-      },
-      {
-        indexed: false,
-        internalType: "string",
-        name: "username",
-        type: "string",
       },
     ],
     name: "UserRegistered",
@@ -652,25 +640,6 @@ const abi = [
   {
     inputs: [
       {
-        internalType: "string",
-        name: "",
-        type: "string",
-      },
-    ],
-    name: "usernames",
-    outputs: [
-      {
-        internalType: "bool",
-        name: "",
-        type: "bool",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
         internalType: "address",
         name: "",
         type: "address",
@@ -678,11 +647,6 @@ const abi = [
     ],
     name: "users",
     outputs: [
-      {
-        internalType: "string",
-        name: "username",
-        type: "string",
-      },
       {
         internalType: "uint256",
         name: "point",
@@ -722,6 +686,11 @@ const abi = [
         internalType: "uint256",
         name: "averageBidValue",
         type: "uint256",
+      },
+      {
+        internalType: "bool",
+        name: "registered",
+        type: "bool",
       },
     ],
     stateMutability: "view",
