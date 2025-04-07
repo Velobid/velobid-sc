@@ -1,2 +1,1 @@
-const contractAddress =
-  "0x88207dee732d786779157f2eef09b9de7fa3a8af40e0c2a2e61b78cd3e7c7f55";
+const contractAddress = "0x532F5aC16987423b331cE8600f597bfa38FaA240";
