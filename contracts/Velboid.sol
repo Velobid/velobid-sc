@@ -203,7 +203,9 @@ contract Auction {
         user.point += 10;
         user.totalBid++;
         user.totalValueBid += _amount;
-        user.averageBidValue = user.totalValueBid / user.totalBid;
+        if (user.totalBid > 0) {
+            user.averageBidValue = user.totalValueBid / user.totalBid;
+        }
         user.totalAuctionParticipated++;
 
         // Update global stats
@@ -214,7 +216,9 @@ contract Auction {
 
         data.totalBid++;
         data.totalVolumeBid += _amount;
-        data.averageBidValue = data.totalVolumeBid / data.totalBid;
+        if (data.totalBid > 0) {
+            data.averageBidValue = data.totalVolumeBid / data.totalBid;
+        } 
 
         // Update top rankings
         updateTopBiddersAndSpenders(msg.sender);
