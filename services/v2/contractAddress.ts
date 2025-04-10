@@ -1,0 +1,1 @@
+const contractAddressV2 = "0x34Daa6D3996DD1E1925c42e7eB5A88B8EE48137a";
